@@ -60,6 +60,13 @@ class Highchart implements \ArrayAccess
     protected $_extraScripts = array();
 
     /**
+     * Array with keys from Highcharts modules to be included
+     *
+     * @var array
+     */
+    protected $_modules = array();
+
+    /**
      * Any configurations to use instead of the default ones
      *
      * @var array An array with same structure as the config.php file
@@ -213,6 +220,13 @@ class Highchart implements \ArrayAccess
             }
         }
 
+        //Include scripts with keys given to be included via includeModules
+        if (!empty($this->_modules)) {
+            foreach ($this->_modules as $key) {
+                $scripts[] = $this->_confs['modules'][$key]['path'] . $this->_confs['modules'][$key]['name'];
+            }
+        }
+
         return $scripts;
     }
 
@@ -256,6 +270,16 @@ class Highchart implements \ArrayAccess
     public function includeExtraScripts(array $keys = array())
     {
         $this->_extraScripts = empty($keys) ? array_keys($this->_confs['extra']) : $keys;
+    }
+
+    /**
+     * Signals which modules are to be included given its keys
+     *
+     * @param array $keys modules keys to be included
+     */
+    public function includeModules(array $keys = array())
+    {
+        $this->_modules = empty($keys) ? array_keys($this->_confs['modules']) : $keys;
     }
 
     /**

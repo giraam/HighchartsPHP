@@ -64,5 +64,57 @@ $jsFiles = array(
             'name' => 'exporting.js',
             'path' => '//code.highcharts.com/modules/'
         ),
+    ),
+    
+    // Highcharts Modules
+    'modules' => array(
+        'annotations' => array(
+            'name' => 'annotations.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'boost' => array(
+            'name' => 'boost.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'broken-axis' => array(
+            'name' => 'broken-axis.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'canvas-tools' => array(
+            'name' => 'canvas-tools.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'data' => array(
+            'name' => 'data.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'drilldown' => array(
+            'name' => 'drilldown.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'funnel' => array(
+            'name' => 'funnel.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'heatmap' => array(
+            'name' => 'heatmap.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'no-data-to-display' => array(
+            'name' => 'no-data-to-display.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'offline-exporting' => array(
+            'name' => 'offline-exporting.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'solid-gauge' => array(
+            'name' => 'solid-gauge.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
+        'treemap' => array(
+            'name' => 'treemap.js',
+            'path' => '//code.highcharts.com/modules/'
+        ),
     )
 );
